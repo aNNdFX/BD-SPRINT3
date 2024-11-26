@@ -54,7 +54,7 @@ salario DECIMAL(10, 2)
 
 CREATE TABLE Admin (
 _adminlogin varchar(10),
-_adminpassword varchar md5(10)
+_adminpassword varchar(10)
 );
 
 
