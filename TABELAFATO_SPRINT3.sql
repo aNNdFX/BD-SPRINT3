@@ -28,7 +28,8 @@ CREATE TABLE Cliente (
 id_cliente INT AUTO_INCREMENT PRIMARY KEY,
 nome_cliente VARCHAR(100) NOT NULL,
 telefone VARCHAR(15),
-email VARCHAR(100)
+email VARCHAR(100),
+cnh VARCHAR(11)
 );
 
 CREATE TABLE Servico (
