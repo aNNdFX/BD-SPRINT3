@@ -35,11 +35,12 @@ VALUES
 
 INSERT INTO Admin (_adminlogin, _adminpassword)
 VALUES
-('Andre', 'ablublublu'),
-('andre', 'ablublublu');
+('Andre', MD5(ablublublu)),
+('andre', MD5(ablublublu));
 
 SELECT * FROM Cliente;
 SELECT * FROM Fato;
 SELECT * FROM Funcionario;
 SELECT * FROM Pedido;
 SELECT * FROM Servico;
+SELECT * FROM Admin;
