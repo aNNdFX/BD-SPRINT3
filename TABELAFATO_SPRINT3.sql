@@ -1,6 +1,6 @@
 -- tabelas FATO e DIMENSIONADA
 
-CREATE TABLE Servico (
+CREATE TABLE Fato (
 id_fato INT AUTO_INCREMENT PRIMARY  KEY,
 id_cliente INT NOT NULL,
 id_servico INT NOT NULL,
