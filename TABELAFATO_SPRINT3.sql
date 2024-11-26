@@ -35,6 +35,7 @@ cnh VARCHAR(11)
 CREATE TABLE Servico (
 id_servico INT AUTO_INCREMENT PRIMARY KEY,
 descricao_servico VARCHAR(100) NOT NULL,
+descricao_revisao VARCHAR(100) NOT NULL,
 preco_base DECIMAL(10, 2) NOT NULL
 );
 
