@@ -8,7 +8,7 @@ USE OficinaMecanica;
 
 -- Criação da tabela Cliente
 CREATE TABLE Cliente (
-    CodCliente INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    id_cliente INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     Nome VARCHAR(50) NOT NULL,
     Endereco VARCHAR(50),
     Telefone CHAR(11),
