@@ -24,7 +24,7 @@ FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente),
 FOREIGN KEY (id_servico) REFERENCES Servico(id_servico)
 );
 
-CREATE TABLE Clientes (
+CREATE TABLE Cliente (
 id_cliente INT AUTO_INCREMENT PRIMARY KEY,
 nome_cliente VARCHAR(100) NOT NULL,
 telefone VARCHAR(15),
