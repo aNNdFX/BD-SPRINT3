@@ -6,15 +6,6 @@ CREATE DATABASE OficinaMecanica;
 -- Uso do banco de dados OficinaMecanica
 USE OficinaMecanica;
 
--- Criação da tabela Cliente
-CREATE TABLE Cliente (
-    id_cliente INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    Nome VARCHAR(50) NOT NULL,
-    Endereco VARCHAR(50),
-    Telefone CHAR(11),
-    CNH CHAR(11) NOT NULL
-);
-
 -- Criação de um índice único no campo CNH
 CREATE UNIQUE INDEX IDX_CNH ON
 	Cliente(CNH);
