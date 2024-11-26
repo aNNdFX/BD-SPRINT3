@@ -33,6 +33,11 @@ VALUES
 (3, 3, 2, '2024-11-23', 550.00, '03:30:00'),
 (4, 4, 3, '2024-11-24', 400.00, '02:15:00');
 
+INSERT INTO Admin (_adminlogin, _adminpassword)
+VALUES
+('Andre', 'ablublublu'),
+('andre', 'ablublublu');
+
 SELECT * FROM Cliente;
 SELECT * FROM Fato;
 SELECT * FROM Funcionario;

@@ -52,5 +52,9 @@ cargo VARCHAR(50),
 salario DECIMAL(10, 2)
 );
 
+CREATE TABLE Admin (
+_adminlogin varchar(10),
+_adminpassword varchar(10)
+);
 
 
