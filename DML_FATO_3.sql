@@ -1,3 +1,8 @@
+INSERT INTO Admin (_adminlogin, _adminpassword)
+VALUES
+('Andre', 'ablublublu'),
+('andre', 'ablublublu');
+
 INSERT INTO Cliente (nome_cliente, telefone, email)
 VALUES
 ('João Silva', '11987654321', 'joao@gmail.com'),
@@ -21,24 +26,15 @@ VALUES
 
 INSERT INTO Pedido (id_cliente, id_servico, data_pedido, status, valor_estimado)
 VALUES
-(1, 1, '2024-11-20', 'Concluído', 120.00),
-(2, 2, '2024-11-21', 'Concluído', 220.00),
-(3, 3, '2024-11-22', 'Pendente', 550.00),
+(1, 1, '2024-11-20', 'Concluido', 120.00),
+(2, 2, '2024-11-21', 'Concluido', 220.00),
+(2, 3, '2024-11-22', 'Pendente', 550.00),
 (4, 4, '2024-11-23', 'Cancelado', 450.00);
 
-INSERT INTO Fato (id_cliente, id_servico, id_funcionario, data_servico, valor_total, duracao_servico)
+-- Inserindo na tabela Carro com FOREIGN KEY
+INSERT INTO Carro (id_funcionario, modelo, descricao, placa)
 VALUES
-(1, 1, 1, '2024-11-21', 120.00, '01:30:00'),
-(2, 2, 1, '2024-11-22', 220.00, '02:00:00'),
-(3, 3, 2, '2024-11-23', 550.00, '03:30:00'),
-(4, 4, 3, '2024-11-24', 400.00, '02:15:00');
-
-INSERT INTO Admin (_adminlogin, _adminpassword)
-VALUES
-('Andre', 'ablublublu'),
-('andre', 'ablublublu');
-
-INSERT INTO Carro (modelo, descricao, placa) VALUES ('Ford Ka', 'Troca de óleo', 'ASG8I47');
+(1, 'Ford Ka', 'Troca de óleo', 'ASG8I47');
 
 SELECT * FROM Cliente;
 SELECT * FROM Fato;
