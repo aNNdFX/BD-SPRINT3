@@ -57,4 +57,11 @@ _adminlogin varchar(10),
 _adminpassword varchar(10)
 );
 
-
+CREATE TABLE Carro (
+id INT AUTO_INCREMENT PRIMARY KEY,
+id_funcionario INT,
+modelo VARCHAR(100) NOT NULL,
+descricao TEXT,
+placa VARCHAR(8),
+FOREIGN KEY (id_funcionario) REFERENCES funcionario(id_funcionario)
+);

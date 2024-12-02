@@ -38,9 +38,12 @@ VALUES
 ('Andre', 'ablublublu'),
 ('andre', 'ablublublu');
 
+INSERT INTO Carro (modelo, descricao, placa) VALUES ('Ford Ka', 'Troca de óleo', 'ASG8I47');
+
 SELECT * FROM Cliente;
 SELECT * FROM Fato;
 SELECT * FROM Funcionario;
 SELECT * FROM Pedido;
 SELECT * FROM Servico;
 SELECT * FROM Admin;
+SELECT * FROM Carro;
